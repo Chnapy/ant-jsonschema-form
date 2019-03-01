@@ -15,7 +15,7 @@ interface AntObjectFieldTemplateProps extends ObjectFieldTemplateProps {
 
 export default function AntObjectFieldTemplate(props: AntObjectFieldTemplateProps): JSX.Element {
 
-    console.log('object', props);
+    // console.log('object', props);
 
     function canExpand(): boolean {
         const { formData, schema, uiSchema } = props;
@@ -41,9 +41,9 @@ export default function AntObjectFieldTemplate(props: AntObjectFieldTemplateProp
     const title = props.uiSchema["ui:title"] || props.title;
     const description = props.description;
 
-    const richTitle = <>
-        {title}<br />
-        <small>{description}</small>
+    const richTitle = (title || description) && <>
+        {title && <>{title}<br /></>}
+        {description && <small>{description}</small>}
     </>;
 
     const content = <>
@@ -57,7 +57,7 @@ export default function AntObjectFieldTemplate(props: AntObjectFieldTemplateProp
         )}
     </>;
 
-    if(isRoot() && !props.styleRoot) {
+    if (isRoot() && !props.styleRoot) {
         return content;
     }
 

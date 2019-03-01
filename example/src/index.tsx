@@ -29,7 +29,34 @@ const uiSchema: UiSchema = {
     }
 };
 
-const SAMPLE_SCHEMA_1: JSONSchema6 = { "type": "object", "$id": "TEST_ID", "required": ["age"], "properties": { "name": { "title": "Name", "type": "string" }, "age": { "description": "Entiers uniquement", "title": "Age", "type": "integer", "minimum": 18 }, "gender": { "type": "string", "enum": ["atttack helicopter", "man", "woman", "i'm not limited by some stupid attributes like gender"], "default": "atttack helicopter" }, "admin": { "type": "boolean" }, "radio": { "type": "boolean" }, "check": { "type": "array", "items": { "type": "string", "enum": ["choice 1", "choice 2"] }, "uniqueItems": true }, "array": { "type": "array", "title": "TOTO Array", "items": { "type": "string" } }, "date": { "type": "string", "format": "date" }, "dateTime": { "type": "string", "format": "date-time" } } };
+const SAMPLE_SCHEMA_1: JSONSchema6 = {
+    "type": "object",
+    "$id": "TEST_ID",
+    "required": ["age"],
+    "properties": {
+        "name": {
+            "title": "Name",
+            "type": "string"
+        },
+        "age": {
+            "description": "Entiers uniquement",
+            "title": "Age",
+            "type": "integer",
+            "minimum": 18
+        },
+        "gender": {
+            "type": "string",
+            "enum": ["atttack helicopter", "man", "woman", "i'm not limited by some stupid attributes like gender"],
+            "default": "atttack helicopter"
+        },
+        "admin": { "type": "boolean" },
+        "radio": { "type": "boolean" },
+        "check": { "type": "array", "items": { "type": "string", "enum": ["choice 1", "choice 2"] }, "uniqueItems": true },
+        "array": { "type": "array", "title": "TOTO Array", "items": { "type": "string" } },
+        "date": { "type": "string", "format": "date" },
+        "dateTime": { "type": "string", "format": "date-time" }
+    }
+};
 
 
 ReactDOM.render(<AntForm
