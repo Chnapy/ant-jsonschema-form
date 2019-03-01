@@ -1,3 +1,3 @@
 
 
-export * from "./other/AntForm";
+export { default as AntForm, AntFormProps } from "./other/AntForm";

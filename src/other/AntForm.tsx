@@ -35,7 +35,7 @@ const _widgets: { [name: string]: Widget; } = {
 
 };
 
-interface AntFormProps extends FormComponentProps, FormProps<any> {
+export interface AntFormProps extends FormComponentProps, FormProps<any> {
     styleRoot?: boolean;
     formAlign?: 'vertical' | 'horizontal' | 'inline';
 }

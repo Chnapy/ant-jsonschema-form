@@ -5,11 +5,11 @@
   "keywords": [],
   "main": "dist/ant-jsonschema-form.umd.js",
   "module": "dist/ant-jsonschema-form.es5.js",
-  "typings": "dist/types/ant-jsonschema-form.d.ts",
+  "typings": "dist/types/index.d.ts",
   "files": [
     "dist"
   ],
-  "author": " <>",
+  "author": "Chnapy <richardhaddad@hotmail.fr>",
   "repository": {
     "type": "git",
     "url": ""

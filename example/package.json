@@ -1,0 +1,25 @@
+{
+  "name": "ant-jsonschema-form-example",
+  "homepage": "https://Chnapy.github.io/ant-jsonschema-form",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": "src/index.tsx",
+  "dependencies": {
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-scripts-ts": "^3.1.0",
+    "ant-jsonschema-form": "file:.."
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.6",
+    "@types/react-dom": "^16.8.2",
+    "typescript": "3.1.3"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  }
+}
